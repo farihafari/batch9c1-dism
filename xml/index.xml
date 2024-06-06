@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization>
+<aptech center="sfc">
+<department name="studentAffairs">
+    <employee id="101">
+        <employeeName>ali</employeeName>
+        <employeEmail>ali@gmail.com</employeEmail>
+    <employeePhone>2151512</employeePhone>
+    <employeAddress>karachi</employeAddress>
+    </employee>
+</department>
+<department name="faculty">
+    <employee id="101">
+    <employeeName></employeeName>
+    <employeEmail></employeEmail>
+    <employeePhone></employeePhone>
+    <employeAddress></employeAddress>
+    </employee>
+</department>
+<department name="it">
+    <employee id="101">
+    <employeeName></employeeName>
+    <employeEmail></employeEmail>
+    <employeePhone></employeePhone>
+    <employeAddress></employeAddress>
+    </employee>
+</department>
+<department name="examination">
+    <employee id="101">
+    <employeeName></employeeName>
+    <employeEmail></employeEmail>
+    <employeePhone></employeePhone>
+    <employeAddress></employeAddress>
+    </employee>
+</department>
+<department name="admission">
+    <employee id="101">
+    <employeeName></employeeName>
+    <employeEmail></employeEmail>
+    <employeePhone></employeePhone>
+    <employeAddress></employeAddress>
+    </employee>
+</department>
+</aptech>
+<aptech center="msg">
+    <department name="studentAffairs">
+        <employee id="101">
+            <employeeName></employeeName>
+            <employeEmail></employeEmail>
+        <employeePhone></employeePhone>
+        <employeAddress></employeAddress>
+        </employee>
+    </department>
+    <department name="faculty">
+        <employee id="101">
+        <employeeName></employeeName>
+        <employeEmail></employeEmail>
+        <employeePhone></employeePhone>
+        <employeAddress></employeAddress>
+        </employee>
+    </department>
+    <department name="it">
+        <employee id="101">
+        <employeeName></employeeName>
+        <employeEmail></employeEmail>
+        <employeePhone></employeePhone>
+        <employeAddress></employeAddress>
+        </employee>
+    </department>
+    <department name="examination">
+        <employee id="101">
+        <employeeName></employeeName>
+        <employeEmail></employeEmail>
+        <employeePhone></employeePhone>
+        <employeAddress></employeAddress>
+        </employee>
+    </department>
+    <department name="admission">
+        <employee id="101">
+        <employeeName></employeeName>
+        <employeEmail></employeEmail>
+        <employeePhone></employeePhone>
+        <employeAddress></employeAddress>
+        </employee>
+    </department>
+    </aptech>
+</organization>

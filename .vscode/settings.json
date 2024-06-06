@@ -1,0 +1,4 @@
+{
+    "xml.validation.disallowDocTypeDecl": true,
+    "xml.trace.server": "messages"
+}
