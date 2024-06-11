@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE company [
+<!ELEMENT company (departments)*>
+<!ELEMENT departments (employees)+>
+<!ELEMENT employees (id,name,(email|phone),designation?)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT designation (#PCDATA)>
+
+]>
+<company>
+<departments>
+<employees>
+<id></id>
+<name></name>
+<email></email>
+<phone></phone>
+<designation></designation>
+<id></id>
+<name></name>
+<email></email>
+<phone></phone>
+<designation></designation>
+
+</employees>
+</departments>
+<departments>
+<employees>
+<id></id>
+<name></name>
+<email></email>
+<phone></phone>
+<designation></designation>
+
+</employees>
+</departments>
+
+</company>
