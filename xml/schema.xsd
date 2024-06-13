@@ -5,7 +5,7 @@
             <xsd:element name = "employee" >
             <xsd:complexType>
             <xsd:sequence>
-            <xsd:element name="id" type="xsd:integer" />
+            <xsd:element name="id" type="xsd:positiveInteger" />
            <xsd:element name="name" >
            <xsd:simpleType>
            <xsd:restriction base="xsd:string">
@@ -16,11 +16,35 @@
            </xsd:simpleType>
 
 </xsd:element>
+<xsd:element name="age" >
+<xsd:simpleType>
+   <xsd:restriction base="xsd:positiveInteger">
+      <xsd:minExclusive value="17"/>
+      <xsd:maxExclusive value="25"/>
+
+</xsd:restriction>
+
+</xsd:simpleType>
+
+</xsd:element>
+<xsd:element name="city">
+   <xsd:simpleType>
+   <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="karachi"/>
+      <xsd:enumeration value="lahore"/>
+      <xsd:enumeration value="islamabad"/>
+
+</xsd:restriction>
+
+</xsd:simpleType>
+</xsd:element>
+
+
             </xsd:sequence>
 
             </xsd:complexType>
 
-            <xsd:element>
+            <xsd:element name="client">
             
          </xsd:sequence>
       </xsd:complexType>
