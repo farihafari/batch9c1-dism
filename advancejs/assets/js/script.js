@@ -129,8 +129,41 @@ $(document).ready(function () {
             location.assign("login.html")
         }
     })
-    // let y = [];
-    // console.log(y)
-    // let x = localStorage.getItem("userDetail");
-    // console.log(x)
+// login
+$("#logIn").on("click",function(){
+    let lgemail= $('#email').val();
+    let lgpassword= $('#password').val();
+let userDetail = JSON.parse(localStorage.getItem('userDetail'));
+// console.log(userDetail)
+let match =false;
+for(let  keys in userDetail){
+    // console.log(keys)
+    if(userDetail[keys].email==lgemail && userDetail[keys].password == lgpassword){
+        // console.log(keys.email)
+        // console.log(keys.password)
+alert("loggin successfully");
+window.location.href="panel.html?uIndex="+keys;
+match = true;
+    }
+}
+if(!match){
+    alert("data is not exit");
+    location.assign("registeration.html")
+}
+})
+// panel
+let url = window.location.href;
+// console.log(url)
+let getUrl = new URL(url);
+// console.log(getUrl);
+let getUrlId = getUrl.searchParams.get("uIndex");
+let userDetail = JSON.parse(localStorage.getItem('userDetail'));
+for(let index in userDetail){
+    if(index== getUrlId){
+        $("#uName").html("Dear! "+userDetail[index].name);
+        $("#e").html(userDetail[index].email)
+    }
+}
+// console.log(getUrlId)
+// console.log(userDetail)
 })
