@@ -17,6 +17,85 @@
         <p class="text-center" id="e"></p>
         <p class="text-center">welcome to your portal</p>
        
+       <div class="row">
+        <div class="col-lg-6">
+            <button class="btn btn-outline-success"  data-bs-toggle="modal"
+            data-bs-target="#modalId">Edit</button>
+            <button class="btn btn-outline-danger" id="delete">Delete</button>
+            <button class="btn btn-outline-warning" id="logOut">Logout</button>
+
+
+        </div>
+       </div>
+       
+       
+       <!-- Modal Body -->
+       <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+       <div
+        class="modal fade"
+        id="modalId"
+        tabindex="-1"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        
+        role="dialog"
+        aria-labelledby="modalTitleId"
+        aria-hidden="true"
+       >
+        <div
+            class="modal-dialog modal-dialog-scrollable modal-dialog-centered"
+            role="document"
+        >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">
+                      Update Profile
+                    </h5>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Name</label>
+                        <input type="email" class="form-control" id="name">
+                        <div></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        <div></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Password</label>
+                        <input type="text" class="form-control" id="password">
+                        <div></div>
+                    </div>
+                   
+                    <div class="mb-3">
+                        <label for="" class="form-label">Number</label>
+                        <input type="tel" class="form-control" id="number">
+                        <div></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                    >
+                        Close
+                    </button>
+                    <button type="button" class="btn btn-primary" id="update">Save</button>
+                </div>
+            </div>
+        </div>
+       </div>
+       
+      
        
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"

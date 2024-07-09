@@ -162,8 +162,46 @@ for(let index in userDetail){
     if(index== getUrlId){
         $("#uName").html("Dear! "+userDetail[index].name);
         $("#e").html(userDetail[index].email)
+        $("#name").val(userDetail[index].name);
+        $("#email").val(userDetail[index].email);
+        $("#password").val(userDetail[index].password);
+        $("#number").val(userDetail[index].number);
+
     }
 }
-// console.log(getUrlId)
-// console.log(userDetail)
+// UPDATE
+$("#update").click(function(){
+    // console.log(userDetail)
+    let Uname = $("#name").val();
+    let Uemail = $("#email").val();
+    let Upassword = $("#password").val();
+    let Unumber = $("#number").val();
+for(let index in userDetail){
+//  console.log(index)   
+if(index == getUrlId){
+    userDetail[index].name = Uname;
+    userDetail[index].email = Uemail;
+    userDetail[index].password = Upassword;
+    userDetail[index].number = Unumber;
+    localStorage.setItem("userDetail",JSON.stringify(userDetail));
+    alert("data updated successfully");
+    location.assign("panel.html?uIndex="+index);
+
+}
+}
+})
+$("#delete").click(function(){
+    // console.log(userDetail)
+    for(let index in userDetail){
+        if(index==getUrlId){
+            userDetail.splice(index,1);
+            alert("account delete successfully");
+            localStorage.setItem("userDetail",JSON.stringify(userDetail));
+            location.assign('registeration.html');
+        }
+    }
+})
+$("#logOut").click(function(){
+    location.assign('login.html')
+})
 })
