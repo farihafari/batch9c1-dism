@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+<style>
+    input{
+        width: 100%;
+    }
+</style>
+    <body>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-4">
+            <h1 class="text-center text-info my-5">basic calutator</h1>
+            <div
+                class="table-responsive"
+            >
+                <table
+                    class="table table-primary"
+                >
+                   
+               <tr >
+                <td colspan="4"><input type="text" id="result"></td>
+               </tr>
+                        <tr>
+                            <td><button
+                                type="button"
+                                class="btn btn-outline-success" onclick="numbers(1)"
+                            >
+                                1
+                            </button>
+                            </td>
+                            <td><button
+                                type="button"
+                                class="btn btn-outline-success" onclick="numbers(2)"
+                            >
+                                2
+                            </button>
+                            </td>
+                            <td><button
+                                type="button"
+                                class="btn btn-outline-success" onclick="numbers(3)"
+                            >
+                                3
+                            </button>
+                            </td>
+                            <td><button
+                                type="button"
+                                class="btn btn-outline-success" onclick="operators('+')"
+                            >
+                                +
+                            </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><button
+                                type="button"
+                                class="btn btn-outline-success" onclick="numbers(4)" 
+                            >
+                                4
+                            </button>
+                            </td>
+                            <td scope="row"><button
+                                type="button"
+                                class="btn btn-outline-success" onclick="numbers(5)"
+                            >
+                                5
+                            </button>
+                            </td>
+                            <td scope="row"><button
+                                type="button"
+                                class="btn btn-outline-success" onclick="numbers(6)"
+                            >
+                                6
+                            </button>
+                            </td>
+                            <td scope="row"><button
+                                type="button"
+                                class="btn btn-outline-success" onclick="operators('-')"
+                            >
+                               -
+                            </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><button
+                                type="button"
+                                class="btn btn-outline-success" onclick="numbers(7)"
+                            >
+                                7
+                            </button>
+                            </td>
+                            <td scope="row"><button
+                                type="button"
+                                class="btn btn-outline-success" onclick="numbers(8)"
+                            >
+                                8
+                            </button>
+                            </td>
+                            <td scope="row"><button
+                                type="button"
+                                class="btn btn-outline-success" onclick="numbers(9)"
+                            >
+                                9
+                            </button>
+                            </td>
+                            <td scope="row"><button
+                                type="button"
+                                class="btn btn-outline-success" onclick="operators('/')"
+                            >
+                               /
+                            </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><button
+                                type="button"
+                                class="btn btn-outline-success" onclick="numbers(0)"
+                            >
+                                0
+                            </button>
+                            </td>
+                            <td scope="row"><button
+                                type="button"
+                                class="btn btn-outline-success" onclick="calculation()"
+                            >
+                                =
+                            </button>
+                            </td>
+                            <td scope="row"><button
+                                type="button"
+                                class="btn btn-outline-success" onclick="operators('*')"
+                            >
+                                *
+                            </button>
+                            </td>
+                            <td scope="row"><button
+                                type="button"
+                                class="btn btn-outline-success" onclick="clearAll()"
+                            >
+                                cc
+                            </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="text-center"><button
+                                type="button"
+                                class="btn btn-outline-success" onclick="del()"
+                            >
+                                del
+                            </button>
+                            </td>
+                          
+                        </tr>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+</div>
+       <script src="assets/js/calculator.js"></script>
+    </body>
+</html>
